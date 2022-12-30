@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    background: var(--main-bg);
+    display: flex;
+    align-items: center;justify-content: center;
+    overflow-x: hidden;
+}
+
+:root {
+    --soft-blue : hsl(215, 51%, 70%) ;
+    --cyan : hsl(178, 100%, 50%) ;
+    --main-bg :  hsl(217, 54%, 11%) ;
+    --card-bg : hsl(216, 50%, 16%) ;
+    --line : hsl(215, 32%, 27%) ; 
+    --white : hsl(0, 0%, 100%) ;
+}
+.card {
+    width: 19rem;
+    height: 32rem ; 
+    background: var(--card-bg);
+    border-radius: 13px;
+    box-shadow: 1rem 1rem 1rem  rgba(0, 0, 0, 0.248);
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.card img {
+    width: 88%;
+    border-radius: 13px;
+    position: absolute;
+    top: 20px;
+    left: 1.1rem;
+}
+
+.card h1 {
+    position: absolute;
+    top: 60%;
+    font-size: 1.2rem;
+    left: 1.1rem;
+    font-weight: 600;
+    color: var(--white);
+    font-family: 'Outfit', sans-serif;
+}
+
+.card h1:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.card h2 {
+    position: absolute;
+    top: 67%;
+    left: 1.1rem;
+    font-size: 1rem;
+    color: var(--soft-blue);
+    font-weight: 200;
+}
+
+.card .eth {
+    position: absolute;
+    width: 0.6rem;
+    top: 80%;
+    left: 1.1rem;
+}
+
+.card h3 {
+    position: absolute;
+    top: 79.8%;
+    left: 2rem;
+    font-size: 0.9rem;
+    color: var(--cyan);
+}
+.card .clock {
+    position: absolute;
+    width: 1rem;
+    top: 80%;
+    left: 12rem;
+}
+
+.card h4 {
+    position: absolute;
+    top: 79.8%;
+    left: 13.2rem;
+    font-size: 0.9rem;
+    color:var(--soft-blue) ;
+    font-weight: 200;
+}
+
+.line {
+    width: 85%;
+    background: var(--line);
+    height: 1px;
+    position: absolute;
+    top: 87%;
+    left: 1.1rem;
+}
+
+.card .avatar {
+    width: 1.7rem;
+    position: absolute;
+    top: 90%;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.card h5 {
+    color: var(--soft-blue);
+    font-size: 0.8rem;
+    font-weight: 200;
+    position: absolute;
+    left: 3.8rem;
+    top: 91%;
+}
+
+.card h5 span {
+    color: white;
+}
+
+.card h5 span:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.card .view {
+    width: 2.5rem;
+    position: absolute;
+    top: 45%;
+    left: 43%;
+    display: none;
+}
+
+.imgdiv {
+    width: 88%;
+    height: 16.6rem;
+    border-radius: 13px;
+    position: absolute;
+    top: 20px;
+    left: 1.1rem;
+
+    cursor: pointer;
+}
+
+.imgdiv:hover .view {
+    display: block;
+    
+}
+
+.imgdiv:hover {
+    background: hsla(178, 100%, 50%, 0.438) ;;
+}
